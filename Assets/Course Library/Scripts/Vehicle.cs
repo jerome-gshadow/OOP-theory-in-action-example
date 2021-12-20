@@ -38,7 +38,7 @@ public abstract class Vehicle : MonoBehaviour
                     markRenderer.enabled = true;
                     markRenderer.transform.position = hitObject.transform.position + new Vector3(0, 5, 0);
 
-                    messageText.text = $"{hitObject.name} Say: {ShowYourself()}";
+                    messageText.text = $"{hitObject.name} Says: {ShowYourself()}";
                 }
                 else
                 {
