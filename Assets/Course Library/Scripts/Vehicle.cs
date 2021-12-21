@@ -12,9 +12,9 @@ public abstract class Vehicle : MonoBehaviour
     protected Renderer markRenderer;
 
     // read-only properties
-    public string Color { get; private set; }
-    public float Weight { get; private set; }
-    public float MaxSpeed { get; private set; }
+    public string Color { get; protected set; }
+    public float Weight { get; protected set; }
+    public float MaxSpeed { get; protected set; }
 
     void Start()
     {
