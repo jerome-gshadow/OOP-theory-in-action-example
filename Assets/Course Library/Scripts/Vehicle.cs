@@ -31,10 +31,9 @@ public abstract class Vehicle : MonoBehaviour
             if(Physics.Raycast(ray, out hit))
             {
                 GameObject hitObject = hit.transform.gameObject;
-
                 if(hitObject.tag == "Vehicle")
                 {
-                    // change mark position
+                    // display mark and change mark position
                     markRenderer.enabled = true;
                     markRenderer.transform.position = hitObject.transform.position + new Vector3(0, 5, 0);
                     var vehicle = hitObject.GetComponent<Vehicle>();
@@ -49,7 +48,6 @@ public abstract class Vehicle : MonoBehaviour
                 }
             }
         }
-
     }
 
     // POLYMORPHISM - overloading
