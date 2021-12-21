@@ -1,4 +1,4 @@
-# OOP-theory-in-action-example
+# OOP theory in action example
 
 A very simple example about OOP in Unity
 
